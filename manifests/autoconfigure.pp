@@ -95,7 +95,7 @@ class barman::autoconfigure (
     type        => 'host',
     database    => $barman::settings::dbname,
     user        => $barman::settings::dbuser,
-    address     => "${::ipaddress_eth1}/32",
+    address     => "${::ipaddress}/32",
     auth_method => 'md5',
     tag         => "barman-${host_group}",
   }
